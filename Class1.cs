@@ -37,7 +37,6 @@ namespace Bypass
              *  Apply memory patching as described by Cyberark here:          
              *  https://www.cyberark.com/threat-research-blog/amsi-bypass-redux/
              */
-
             UIntPtr dwSize = (UIntPtr)4;
             uint Zero = 0;
 
